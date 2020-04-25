@@ -37,5 +37,5 @@ model = ResNetAudio(**config)
 learn = Learner(dls, model, metrics=accuracy, cbs=ShowGraphCallback())
 
 # Cell
-learn.unfreeze()
-learn.fit_one_cycle(5, 1e-3)
+#learn.unfreeze()
+#learn.fit_one_cycle(5, 1e-3)
