@@ -4,8 +4,8 @@
 
 ## Install
 
-`git clone https://github.com/floleuerer/fastai2-resnet-audio.git`
+`git clone https://github.com/floleuerer/fastai2_resnet_audio.git`
 
 ## How to use
 
-See Notebook `09_tutorial.ipynb` for instructions.
+See Notebook `tutorial/tutorial.ipynb` for instructions.
