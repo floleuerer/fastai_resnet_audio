@@ -16,19 +16,10 @@ index = {"conv1xk": "00_model.ipynb",
          "AudioToMono": "01_data.ipynb",
          "AudioRandomCrop": "01_data.ipynb",
          "AudioAddNoise": "01_data.ipynb",
-         "AudioToTensor": "01_data.ipynb",
-         "path": "09_tutorial.ipynb",
-         "length": "09_tutorial.ipynb",
-         "device": "09_tutorial.ipynb",
-         "dblocks": "09_tutorial.ipynb",
-         "dls": "09_tutorial.ipynb",
-         "config": "09_tutorial.ipynb",
-         "model": "09_tutorial.ipynb",
-         "learn": "09_tutorial.ipynb"}
+         "AudioToTensor": "01_data.ipynb"}
 
 modules = ["model.py",
-           "data.py",
-           "tutorial.py"]
+           "data.py"]
 
 doc_url = "https://floleuerer.github.io/fastai2_resnet_audio/"
 
