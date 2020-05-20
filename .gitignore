@@ -10,6 +10,8 @@ _experiments
 _tmp*
 tmp*
 tags
+*.pth
+*.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
