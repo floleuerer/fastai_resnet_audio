@@ -76,10 +76,8 @@ class AudioToMono(Transform):
 
     def encodes(self, o: TensorAudio):
         sr = o.sr
-        #print("downmixmono start", o.shape, o.sr)
         o = TensorAudio(torch.mean(o,dim=0).unsqueeze(0))
         o.sr = sr
-        #print("downmixmono", o.shape, o.sr)
         return o
 
 

@@ -7,24 +7,15 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: fastai2-resnet-audio model
+      url: /model
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
-    - output: web,pdf
-      title: Test functions
-      url: /test.html
-    - output: web,pdf
-      title: Core functions
-      url: /core.html
-    - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: fastai2-resnet-audio data
+      url: /data
     output: web
-    title: Notebook
+    title: fastai2_resnet_audio
   output: web
   title: Sidebar
