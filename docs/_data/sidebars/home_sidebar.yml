@@ -10,12 +10,12 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: fastai2-resnet-audio model
-      url: /model
+      title: fastai_resnet_audio model
+      url: model.html
     - output: web,pdf
-      title: fastai2-resnet-audio data
-      url: /data
+      title: fastai_resnet_audio data
+      url: data.html
     output: web
-    title: fastai2_resnet_audio
+    title: fastai_resnet_audio
   output: web
   title: Sidebar

@@ -1,7 +1,7 @@
 {
-  "fastai2_resnet_audio": {
+  "fastai_resnet_audio": {
     "Overview": "/",
-    "fastai2-resnet-audio model": "/model",
-    "fastai2-resnet-audio data": "/data"
+    "fastai_resnet_audio model": "model.html",
+    "fastai_resnet_audio data": "data.html"
   }
 }

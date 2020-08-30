@@ -1,12 +1,14 @@
 ---
 
-title: fastai2-resnet-audio model
+title: fastai_resnet_audio model
+
 
 keywords: fastai
 sidebar: home_sidebar
 
 summary: "ResNet-like 1D CNN model for audio"
 description: "ResNet-like 1D CNN model for audio"
+nb_path: "00_model.ipynb"
 ---
 <!--
 
@@ -70,7 +72,7 @@ description: "ResNet-like 1D CNN model for audio"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="conv1xk" class="doc_header"><code>conv1xk</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>conv1xk</code>(<strong><code>in_channels</code></strong>, <strong><code>out_channels</code></strong>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>1</code></em>)</p>
+<h4 id="conv1xk" class="doc_header"><code>conv1xk</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>conv1xk</code>(<strong><code>in_channels</code></strong>, <strong><code>out_channels</code></strong>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>1</code></em>)</p>
 </blockquote>
 
 </div>
@@ -94,7 +96,7 @@ description: "ResNet-like 1D CNN model for audio"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="init_cnn_1d" class="doc_header"><code>init_cnn_1d</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>init_cnn_1d</code>(<strong><code>m</code></strong>)</p>
+<h4 id="init_cnn_1d" class="doc_header"><code>init_cnn_1d</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>init_cnn_1d</code>(<strong><code>m</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -118,7 +120,7 @@ description: "ResNet-like 1D CNN model for audio"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="splitter" class="doc_header"><code>splitter</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L23" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>splitter</code>(<strong><code>m</code></strong>)</p>
+<h4 id="splitter" class="doc_header"><code>splitter</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L23" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>splitter</code>(<strong><code>m</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -142,7 +144,7 @@ description: "ResNet-like 1D CNN model for audio"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ResidualBlock" class="doc_header"><code>class</code> <code>ResidualBlock</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L27" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResidualBlock</code>(<strong><code>in_channels</code></strong>, <strong><code>out_channels</code></strong>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>1</code></em>, <strong><code>downsample</code></strong>=<em><code>None</code></em>) :: <code>Module</code></p>
+<h2 id="ResidualBlock" class="doc_header"><code>class</code> <code>ResidualBlock</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L27" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResidualBlock</code>(<strong><code>in_channels</code></strong>, <strong><code>out_channels</code></strong>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>1</code></em>, <strong><code>downsample</code></strong>=<em><code>None</code></em>) :: <code>Module</code></p>
 </blockquote>
 <p>Base class for all neural network modules.</p>
 <p>Your models should also subclass this class.</p>
@@ -187,7 +189,7 @@ parameters converted too when you call :meth:<code>to</code>, etc.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ResNetAudio" class="doc_header"><code>class</code> <code>ResNetAudio</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResNetAudio</code>(<strong><code>block</code></strong>, <strong><code>layers</code></strong>, <strong><code>in_channels</code></strong>=<em><code>64</code></em>, <strong><code>num_classes</code></strong>=<em><code>10</code></em>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>2</code></em>, <strong><code>dropout</code></strong>=<em><code>0.2</code></em>) :: <code>Sequential</code></p>
+<h2 id="ResNetAudio" class="doc_header"><code>class</code> <code>ResNetAudio</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ResNetAudio</code>(<strong><code>block</code></strong>, <strong><code>layers</code></strong>, <strong><code>in_channels</code></strong>=<em><code>64</code></em>, <strong><code>num_classes</code></strong>=<em><code>10</code></em>, <strong><code>kernel_size</code></strong>=<em><code>3</code></em>, <strong><code>stride</code></strong>=<em><code>2</code></em>, <strong><code>dropout</code></strong>=<em><code>0.2</code></em>) :: <code>Sequential</code></p>
 </blockquote>
 <p>A sequential container.
 Modules will be added to it in the order they are passed in the constructor.
@@ -245,7 +247,7 @@ model = nn.Sequential(OrderedDict([
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="replace_head" class="doc_header"><code>replace_head</code><a href="https://github.com/floleuerer/fastai2_resnet_audio/tree/master/fastai2_resnet_audio/model.py#L96" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>replace_head</code>(<strong><code>model</code></strong>, <strong><code>num_classes</code></strong>)</p>
+<h4 id="replace_head" class="doc_header"><code>replace_head</code><a href="https://github.com/floleuerer/fastai_resnet_audio/tree/master/fastai_resnet_audio/model.py#L96" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>replace_head</code>(<strong><code>model</code></strong>, <strong><code>num_classes</code></strong>)</p>
 </blockquote>
 
 </div>
